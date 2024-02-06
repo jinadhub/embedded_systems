@@ -1,0 +1,47 @@
+
+- They interract with a user via simple interface e.g digital camera, TV, cell phone 
+- They do not interract directly wth a user but through another user device e.g external storage disk, flash drive 
+- Efficiency is very important e.g fast,low power, cheaper when it comes to embedded systems 
+	- Most embedded products are in cost-critical markets
+	- Other applicatins are in performance or power critical markets e.g military, medical 
+
+
+	TIGHT CONTRAINTS 
+	- Manufacturing cost
+	- Design cost
+	- Performance
+	- Power
+	- Time-to-market 
+
+HOW Embedded systems are designed 
+
+	- ES tend to ne application-specific i.e performs one task or set of related tasks 
+		- SOme devices blur the line e.g cell phones 
+	- Application specificity 
+		- design focused on one application -- unlike general purpose systems e.g laptops 
+		- higher design efficiency is possible 
+			- special-purpose vs general purpose
+	- Hardware/Software Codesign  
+	  HW and SW are often designed together
+		- general purpose systems use hardware and software develooped by different companies  or vendors 
+		- more work for designers as you have to known the hardware in order to build the right software that is compactible 
+
+GENERIC EMBEDDED SYSTEMS STRUCTURE 
+	-sensors: (take data from outside world)
+	-ADC
+	-Microcontrollers(IP FPGA)
+		IP: Intellectual property core are very useful for common tasks such as 
+			- network controllers (ethernet, CAN)
+			- Audio/video (audio codec, VGA controllers)
+		IP must interract with microcontroller 
+			- consider communication protocol 
+		FPGA: Field programmable Gate Array
+			- hardware that can be configured via RAM
+				-faster than SW, slower than ASIC 
+			        - No fabrication needed 
+		FPGA cheaper than IP Core
+
+	-DAC	
+	-Actuators 
+
+
