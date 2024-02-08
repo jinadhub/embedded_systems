@@ -44,4 +44,118 @@ GENERIC EMBEDDED SYSTEMS STRUCTURE
 	-DAC	
 	-Actuators 
 
+MICROCONTROLLERS 
+
+ - Integrated circuit that excutes a program 
+    - Microcontrollers vs microprocessor 
+        microcontroller reads inputs from other components and control other components 
+            - slower, 16MHz - 500MHz
+            - less memory, fewer features 
+    - Microcontrollers are less powerful than microprocessor(heavy duty, fast)
+    - Microcontrollers need to be programmed such as C and place the programme in mctrlr memory
+
+    Programming microcontrollers 
+    - Write code on a host machine - regular desktop or laptop
+    - Programming the microcontroller - transferring the programme from host to microcontroller 
+
+    Adduio - program in C 
+    raspberrypi - program in python 
+  - code is compiled amd shipping to the microcontroller 
+
+   - Adduio and raspberrypi are programmed by pluging them with a usb to a computer. 
+
+
+
+    - Development board 
+
+Categories of processors: general purpose vs digital single processors
+
+-General purpose processors e.g laptops, desktop:
+    - used for many applications 
+    - More powerful 
+    - more expensive 
+
+- Digital signal processors 
+    - Made to suppoer DSP functions such as audio streams, video streams, 
+    - Vector instructions: do the same thing to different data 
+    - Cheaper but more limited 
+
+SENSORS
+ - They receive information from the environment 
+ - Provide simple information
+ - Examples of simple sensors (supply simple outputs real numbers) include:
+    - Thermistor: reports temperature 
+    - Photoresistor: reports light intensity 
+- Complex sensors:
+    -More complicated data
+    - Examples:
+        - CMOS camera: captures images 
+        - Ethernet controller: enables network communication
+
+
+ACTUATORS
+ - Cause events to occur in the environment
+ - Simple actuators;
+    - Light-Emtting Diodes(LED) - small lights
+    - LCD Displat: simple display 
+
+- Complex Actuators:
+    - Servp motors: moves something, changing angles for example in robots
+    - Ethernet controller: enables network communication 
+
+
+Lecture 3.1 Analog/Digital Conversion 
+
+- Sensors are sensing physical phenomenon which are often analog signals. real numbers (have fractions) integers (no fractions) 
+
+- Converts analog data to digital data 
+- Used to interface with analog sensors. 
+- Lighting and sound are example of analog phenomenon because, you can varyin levels of brightneess/dimness between 
+  completely off and completely dark; sound: completely loud and completely low/mute. 
+
+- Digital are like integer numbers and analog are like real numbers
+
+- Miconttrollers are digital sensors understands 0 and 1 binary
+- Thus for our programme on microsontrollers to be able to use information from sensors, that analog signal has been
+  converted into a digital value. That is what analog->digital conversion is for
+
+
+Output end: Digital to Analog conversion 
+- converts digital signals to analogs signals 
+- used interface with analog actuators
+- for example: 
+	microsontrollers -> signals to a speaker(analog device, hence needs analog signals)
+	- microcontrollers outputs 0s and 1s, hence they need to be converted into analog signals 
+Hence, it is very common to used:
+		- digital -> analog conversion for output systems
+		- analog -> digital conversion for input signals 
+
+
+
+
+-Lecture 3.2: Basic Equipment 
+   
+	- Development board with a microcontroller (Adduio)
+	- connectors: usb, ethernet cable, jumper wires
+	- Input: Potentiiometer,Photoresistor, Keypad, buttons
+	- Output: LEDs
+	- Others: Resistors, Breadboard
+	BREADBOARD is for wiring; 
+		-used for fast, non-permanent wiring
+		- Holes fir 24guage wire and, 0.1 inch spacing
+		- common prototyping sizes 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
